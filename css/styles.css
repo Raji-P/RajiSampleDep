@@ -1,0 +1,574 @@
+@font-face {
+    font-family: "OpenSans Regular";
+    src: url("fonts/OpenSans-Regular.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans Bold";
+    src: url("fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans SemiBold";
+    src: url("fonts/OpenSans-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "OpenSans Light";
+    src: url("fonts/OpenSans-Light.ttf");
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+button,
+a,
+li {
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.row {
+    margin: 0;
+}
+
+.dropdown-item,
+.dropdown-item.active,
+.dropdown-item:active {
+    font-size: 14px;
+    text-transform: capitalize;
+}
+
+.dropdown-item.active,
+.dropdown-item:active {
+    background: #2a3e56;
+}
+
+.mt-20 {
+    margin-top: 20px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+
+/********************************
+HEADER CSS SECTION STARTS
+********************************/
+
+.navbar-brand.mobilelogo {
+    display: none;
+}
+
+.top_section_nav {
+    width: 100%;
+}
+
+.top_section_nav i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: black;
+}
+
+.reachus_text {
+    margin: 0;
+    font-size: 14px;
+    display: inline-block;
+    color: #092648;
+}
+
+.btn.login {
+    background: #2a3e56;
+    color: #fff;
+    font-size: 14px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 2px 0px;
+    width: 100px;
+}
+
+.btn.register {
+    background: #fff;
+    color: #092648;
+    font-size: 14px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    padding: 2px 0px;
+    width: 100px;
+    border: 1px solid #2a3e56;
+}
+
+.nav-item {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #42495b;
+}
+
+.nav-item .nav-link {
+    color: #42495b !important;
+}
+
+.nav-item.active .nav-link {
+    color: #ff6764 !important;
+    font-weight: 500;
+}
+
+.input {
+    width: 330px;
+    background: transparent;
+    padding: 8px 25px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #42495b;
+    border: 1px solid #42495b;
+}
+
+ ::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #42495b;
+}
+
+ ::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #42495b;
+}
+
+ :-ms-input-placeholder {
+    /* IE 10+ */
+    color: #42495b;
+}
+
+.search_box {
+    position: relative;
+}
+
+.search-btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+    color: #fff;
+    background: #41d8a6;
+    border: 0px;
+    width: 100px;
+    height: 41px;
+    border-radius: 50px;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+
+/***********************************
+COURSE LIBRARY SECTION CSS STARTS
+***********************************/
+
+.course_library {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.course_library .accordion .card-header:after {
+    font-family: 'FontAwesome';
+    content: "\f077";
+    float: right;
+}
+
+.course_library .accordion .card-header.collapsed:after {
+    content: "\f078";
+}
+
+.course_library .coursefilter,
+.course_library .coursetags {
+    background: #f3f3f3;
+    border-radius: 5px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+.course_library .coursefilter #accordion {
+    padding: 10px 20px;
+}
+
+.course_library .filterheading {
+    color: #42495b;
+    font-size: 24px;
+    margin-bottom: 0;
+    padding-left: 20px;
+}
+
+.course_library .coursefilter #accordion .card-header {
+    background: #2a3e56;
+    color: #fff;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.course_library .coursefilter #accordion .card-title {
+    font-size: 18px;
+}
+
+.course_library .coursefilter #accordion .card-title i {
+    margin-right: 5px;
+}
+
+.checkbox input[type="checkbox"]:checked~label::before {
+    color: #7bbe72;
+}
+
+.course_library .coursefilter #accordion .form-check-input {
+    display: grid;
+}
+
+.course_library .coursefilter #accordion .form-check-label {
+    font-size: 14px;
+    color: #42495b;
+    margin-left: 10px;
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+#collapseOne,
+#collapseTwo,
+#collapseThree {
+    padding-left: 15px;
+}
+
+.course_library .coursefilter #accordion .form-check {
+    margin-bottom: 10px;
+}
+
+.course_library .coursetags .badge {
+    background: #2a3e56;
+    border-radius: 50px;
+    padding: 10px 20px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'OpenSans Light', sans-serif !important;
+    font-weight: 100;
+    margin-right: 10px;
+}
+
+.coursetags .tags {
+    padding: 15px 30px;
+}
+
+input[type='checkbox']:before {
+    transition-timing-function: cubic-bezier(.075, .820, .165, 1);
+    border: 2px solid;
+    border-radius: 0;
+    background-color: #f3f3f3;
+    border-color: transparent;
+    box-sizing: border-box;
+    color: #ff6764;
+    content: close-quote;
+    display: inline-block;
+    height: 13px;
+    outline: 1px solid #2a3e56;
+    transition-duration: .5s;
+    transition-property: background-color, border-color;
+    width: 13px;
+}
+
+input[type='checkbox']:checked:before {
+    background-color: #ff6764;
+    border-color: #f3f3f3;
+    outline: 1px solid #ff6764;
+}
+
+
+/********************************
+
+*********************************/
+
+.courselist .topmenu {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+
+.courselist .topmenu .filterbadge {
+    background: #ff6764;
+    border-radius: 10rem;
+    margin-left: 15px;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 21px;
+    width: unset;
+}
+
+.courselist .coursesearch {
+    float: right;
+    width: 290px;
+}
+
+.courselist .topmenu .form-group input {
+    font-size: 14px;
+    padding-left: 0;
+    color: #A6A6A6;
+}
+
+.courselist .coursesearch .input-group-text i {
+    font-size: 14px;
+    color: #42495b;
+}
+
+.courselist .coursesearch .input-group-text {
+    border-right: none !important;
+    border-top-left-radius: 0.25rem;
+    border-bottom-left-radius: 0.25rem;
+}
+
+.courselist .coursesearch input {
+    font-size: 14px;
+    padding-left: 0;
+    color: #A6A6A6;
+}
+
+.form-control:focus {
+    box-shadow: 0 0 0 0.2rem rgb(208 214 221) !important;
+}
+
+.courselist .badge {
+    background: #B9DEED;
+    border-radius: 10rem;
+    margin-left: 15px;
+    color: #2D6270;
+    font-size: 16px;
+    font-weight: 500;
+    width: 89px;
+    line-height: 21px;
+}
+
+.courselist .card {
+    border: 1px solid #eeeeee;
+}
+
+.courselist .card-title {
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'OpenSans Bold', sans-serif !important;
+    color: #42495b;
+    line-height: 24px;
+    margin-bottom: 10px;
+}
+
+.courselist .courselistcard {
+    display: inline-block;
+    float: left;
+    margin-bottom: 10px;
+}
+
+.courselist .courselistcard .card-image {
+    position: relative;
+}
+
+.courselist .courselistcard .image-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+.courselist .courselistcard .image-overlay .overlay-info {
+    color: #fff;
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 40%;
+    font-family: 'OpenSans Regular', sans-serif !important;
+}
+
+.courselist .courselistcard .card:hover .image-overlay {
+    opacity: 1;
+}
+
+.courselist .courselistcard .card {
+    box-shadow: 0 0 10px 0 rgb(197 193 193 / 26%);
+}
+
+.courselist .card-text {
+    font-size: 14px;
+    color: #42495b;
+    line-height: 17px;
+    font-family: 'OpenSans Regular', sans-serif !important;
+}
+
+.courselist .card_bottom .views {
+    font-size: 14px;
+}
+
+.courselist .card_bottom a {
+    color: #A88746;
+    text-decoration: underline;
+    margin-right: 15px;
+    font-size: 17px;
+    line-height: 22px;
+}
+
+.courselist .card_bottom .coursebtn {
+    background: #ff6764;
+    color: #fff;
+    padding: 2px 15px;
+    border-radius: 50px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'OpenSans Regular', sans-serif !important;
+}
+
+.courselist .card_bottom i {
+    color: #42495b;
+    margin-right: 3px;
+    margin-left: 3px;
+}
+
+.courselist .card_bottom i::before {
+    margin-right: 3px;
+}
+
+.courselist .courselistcard .card-img-top {
+    width: 100%;
+    height: 213px;
+    object-fit: cover;
+}
+
+.courselist .card_bottom.card-footer {
+    border: none !important;
+}
+
+.cardhr {
+    width: 90%;
+    margin: 0 auto !important;
+    border-top: 1px solid #e5e5e5 !important;
+}
+
+
+/************************************
+ FOOTER SECTION CSS STARTS
+*************************************/
+
+.footer {
+    background: #2f445f;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer li {
+    list-style: none;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer li.footertitle {
+    font-size: 16px;
+    color: #fff;
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.footer .input {
+    width: 260px;
+    background: transparent;
+    padding: 8px 25px;
+    border-radius: 50px;
+    outline: none;
+    font-size: 14px;
+    color: #fff;
+    border: 1px solid #072344;
+    color: #fff;
+}
+
+.footer::-webkit-input-placeholder {
+    /* Chrome/Opera/Safari */
+    color: #fff;
+}
+
+.footer::-moz-placeholder {
+    /* Firefox 19+ */
+    color: #fff;
+}
+
+.footer:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
+.footer .search_box {
+    position: relative;
+}
+
+.footer .search_box i {
+    position: absolute;
+    left: 12px;
+    top: 13px;
+    font-size: 14px;
+    color: #072344;
+}
+
+.footer .search-btn {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    cursor: pointer;
+    color: #fff;
+    background: #072344;
+    border: 0px;
+    width: 100px;
+    height: 41px;
+    border-radius: 50px;
+    outline: none;
+    text-transform: capitalize;
+    font-size: 14px;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2), 0 -1px 7px 0 rgb(0, 0, 0, 0.1);
+}
+
+.bottom_section_nav {
+    background: #ff6764;
+    padding: 8px 10px;
+}
+
+.bottom_section_nav i {
+    font-size: 14px;
+    margin-right: 5px;
+    color: #fff;
+}
+
+.bottom_section_nav .reachus_text {
+    margin: 0;
+    font-size: 12px;
+    display: inline-block;
+    color: #fff;
+}
+
+.bottom_section_nav .copyright {
+    background: #ff6764;
+}
+
+.bottom_section_nav .copyright p {
+    margin-right: 10px;
+}
